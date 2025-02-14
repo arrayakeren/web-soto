@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soto Kudus - Authentic Indonesian Dish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #001F3F;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-image: url('bg2.jpg');
+			background-size: cover; 
+			background-repeat: no-repeat;
+            padding: 120px 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        @keyframes rotateImage {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .rotating-image {
+            display: inline-block;
+            animation: rotateImage 5s linear infinite;
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+        }
+        .photo-frame {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            margin: 20px auto;
+            border: 8px solid white;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+        }
+        .photo-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #F0F8FF;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 4px;
+			
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            background-color: #F0F8FF;
+            color: #001F3F;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #tutorial {
+            background-color: #F0F8FF;
+            color: #001F3F;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        #contact form {
+            background-color: #F0F8FF;
+            color: #001F3F;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #003366;
+            border-radius: 100px;
+        }
+        #contact button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soto Kudus</h1>
+        <img src="fotomelayang.png" alt="Soto Kudus" class="rotating-image"width="500" height="600">
+        <nav>
+            <ul>
+                <b><li><a href="#Purpose">Home</a></li></b>
+                <b><li><a href="#ingredients">Ingredients</a></li></b>
+                <b><li><a href="#tools">Tools</a></li></b>
+                <b><li><a href="#tutorial">Tutorial</a></li></b>
+                <b><li><a href="#contact">Contact</a></li></b>
+                <b><li><a href="https://youtu.be/nyfhPcVOh1k?si=lsXLT5djEhmEt2xj">Video</a></li></b>
+                <b><li><a href="https://heyzine.com/flip-book/6f7bb76ed7.html">Flipbook</a></li></b>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="home-section">
+        <h2>PURPOSE</h2>
+        <p>He purpose of making Soto Kudus is to serve a delicious and nutritious dish with an authentic taste from Kudus, Central Java. Besides being a daily meal, Soto Kudus is also made to preserve traditional cuisine, introduce regional culture, and be a special dish for family gatherings or celebrations..</p>
+    </section>
+
+   <section id="ingredients">
+    <h2>Ingredients</h2>
+    <div class="container">
+        <div class="photo-frame">
+            <img src="chicken.jpeg" alt="Chicken">
+            <div class="photo-text">1 kg Cut Chicken</div>
+        </div>
+        
+        <div class="photo-frame">
+            <img src="been sprouts.jpeg" alt="Chilli">
+            <div class="photo-text">200 g Long Bean Sprouts</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="shallots.jpeg" alt="shallots">
+            <div class="photo-text">16 Cloves Shallots</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="garlic.jpeg" alt="garlic">
+            <div class="photo-text">10 Cloves Garlic</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="green onions.jpeg" alt="green onions">
+            <div class="photo-text">2 Stalks Green Onions</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="calery laves.jpeg" alt="calery laves">
+            <div class="photo-text">5 Sprigs Celery Leaves</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="seledri.jpeg" alt="seledri">
+            <div class="photo-text">5 Bay Leaves</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="lime laves.jpeg" alt="lime laves">
+            <div class="photo-text">8 Kaffir Lime Leaves</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="gingger.jpeg" alt="Gingger">
+            <div class="photo-text">2 Inches Ginger</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="candlenuts.jpeg" alt="candlenuts">
+            <div class="photo-text"> 6 Roasted Candlenuts</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="lemongrass.jpeg" alt="lemongrass">
+            <div class="photo-text">2 Stalks Lemongras</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="palm sugar.jpeg" alt="palm sugar">
+            <div class="photo-text">1 tbsp Palm Sugar</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="garam.jpeg" alt="garam">
+            <div class="photo-text">1 tbsp Salt</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="vermicelli.jpeg" alt="vermicelli">
+            <div class="photo-text">Vermicelli</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="coriander.jpeg" alt="Coriander">
+            <div class="photo-text">½ tbsp Ground Coriander</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="cumin.jpeg" alt="cumin">
+            <div class="photo-text">1 tsp Ground Cumin</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="pepper.jpeg" alt="peper">
+            <div class="photo-text">1 tsp Ground Pepper</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="kaldu jamur.jpeg" alt="kaldu jamur">
+            <div class="photo-text">1 tsp Mushroom Stock Powder</div>
+        </div>
+		
+		<div class="photo-frame">
+            <img src="water.jpeg" alt="water">
+            <div class="photo-text">2.5 Liters Water</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="tools">
+    <h2>Tools</h2>
+    <div class="container">
+        <div class="photo-frame">
+            <img src="panci.jpeg" alt="panci">
+            <div class="photo-text">Pan</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="kompor.jpeg" alt="kompor">
+            <div class="photo-text">Stove</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="chopper.jpeg" alt="chopper">
+            <div class="photo-text">Chopper</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="knife.jpeg" alt="knife">
+            <div class="photo-text">Knife</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="talenan.jpeg" alt="talenan">
+            <div class="photo-text">Chopping Board</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="sutil.jpeg" alt="sutil">
+            <div class="photo-text">Ladle</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="Bowl.jpeg" alt="Bowl">
+            <div class="photo-text">Bowl</div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="tutorial">
+        <h2>Tutorial</h2>
+        <p>Follow these steps to prepare Soto Kudus:</p>
+        <ol>
+		<h2>Prepare the Spice Paste</h2>
+			<p>1. Blend shallots, garlic, toasted candlenuts, and ginger with a little water until smooth.</p>
+			<p>2. Sauté the spice paste over medium heat until fragrant and slightly changes color.</p>
+			<p>3. Add lemongrass, bay leaves, ground coriander, ground cumin, and ground white pepper. Stir well over low heat.</p>  
+		<h2>Boil the Chicken</h2>
+			<p>1. Bring 2.5 liters of water to a boil in a pot.</p>
+			<p>2. Add the cleaned chicken.</p>  
+			<p>3. Add bay leaves, ginger, and lemongrass.</p>  
+			<p>4. Simmer until the water reaches a rolling boil.</p>  
+		<h2>Combine and Season</h2>
+			<p>1. Add the sautéed spice paste to the boiling water.</p>
+			<p>2. Stir in palm sugar, salt, and mushroom stock powder.</p>  
+			<p>3. Mix well and let the chicken cook until fully tender. Adjust the seasoning to taste.</p>  
+			<p>4. Once the chicken is cooked, shred it into bite-sized pieces.</p>  
+		<h2>Prepare the Bowl and Arrange the Ingredients</h2>
+			<p>1. Take a serving bowl and arrange the cooked rice noodles, bean sprouts, and shredded chicken.</p>
+			<p>2. Sprinkle chopped green onions, celery, and fried shallots on top.</p>  
+		<h2>Pour the Broth and Serve</h2>
+			<p>1. Pour the hot broth over the ingredients in the bowl.</p>
+			<p>2. Serve with lime wedges, chili sauce, and crackers.</p>
+
+
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
